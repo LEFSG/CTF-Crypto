@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Crypto - Challenges</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CTF Crypto Challenges</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>XOR Challenge</h2>
+        <p>Đoạn mã: <code>4c 6f 76 65</code> đã được mã hoá bằng XOR với một key. Hãy tìm key và giải mã !</p>
+        <input type="text" id="xor-answer" placeholder="Nhập thông điệp đã được giải mã">
+        <button onclick="checkXOR()">Submit</button>
+        <p id="xor-feedback"></p>
+    </section>
+
+    <section>
+        <h2>RSA Challenge</h2>
+        <p>Cho: <code>n = 3233</code>, <code>e = 17</code>, <code>c = 2200</code>. Hãy tìm <code>m</code> (bản rõ) sử dụng RSA decrypt.</p>
+        <input type="text" id="rsa-answer" placeholder="Nhập thông điệp đã được giải mã">
+        <button onclick="checkRSA()">Submit</button>
+        <p id="rsa-feedback"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CTF Crypto</p>
+    </footer>
+</body>
+</html>
